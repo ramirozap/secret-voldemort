@@ -1,0 +1,14 @@
+{
+  "name": "secret-voldemort-server",
+  "version": "1.0.0",
+  "description": "secret voldemort websocket server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ramiro Zapata",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io": "^2.1.1"
+  }
+}
