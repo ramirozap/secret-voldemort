@@ -1,8 +1,13 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import logo from './logo.svg'
+import './App.css'
+import { saveDate } from './socket'
 
 class App extends Component {
+  clickHandler = () => {
+    let date = Date.now()
+    saveDate(date.toString())
+  }
   render() {
     return (
       <div className="App">
@@ -19,10 +24,11 @@ class App extends Component {
           >
             Learn React
           </a>
+          <button onClick={this.clickHandler}>Save Date</button>
         </header>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
